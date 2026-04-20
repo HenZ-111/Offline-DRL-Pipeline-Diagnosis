@@ -1,7 +1,7 @@
 # Offline Reinforcement Learning for Pipeline Diagnosis
-A time-series classification framework originally developed for pipeline leak detection, with strong performance in **small-sample scenarios** and probably applicability to other **defect detection tasks**.  
+A time-series classification framework originally developed for pipeline leak detection, with strong performance in **small-sample scenarios** and applicability to other **defect detection tasks**.  
 本项目提出了一种面向管道泄漏检测的时间序列分类框架。  
-此框架在**小样本条件**下具有良好的性能表现，并可应用于其他**缺陷检测**任务。
+该框架在**小样本条件**下仍表现出较强的分类性能，并可推广应用于其他**缺陷检测**任务。
 ***
 
 ## 🧠Methodology/方法
