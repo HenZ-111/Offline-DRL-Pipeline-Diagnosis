@@ -12,8 +12,8 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
 
 ## 目录
 - [方法](#Methodology)
-- [准备](#Preparation🔍)
-- [安装与运行](#安装与运行)
+- [准备](#Preparation)
+- [环境配置](#Installation/环境配置)
 - [使用示例](#使用示例)
 - [项目结构](#项目结构)
 - [技术细节](#技术细节)
@@ -28,12 +28,12 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
 
 
 
-## Preparation🔍
+## Preparation
 
 
 
 
-## ⚙️Installation/环境配置
+## Installation/环境配置
 
 
 
