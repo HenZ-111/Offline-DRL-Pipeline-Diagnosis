@@ -13,9 +13,9 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
 ## 目录
 - [方法](#Methodology)
 - [准备](#Preparation)
-- [环境配置](#Installation/环境配置)
-- [使用示例](#使用示例)
-- [项目结构](#项目结构)
+- [环境配置](#Installation)
+- [使用方法](#Usage)
+- [项目结构](#Project Structure)
 - [技术细节](#技术细节)
 - [贡献](#贡献)
 - [许可证](#许可证)
@@ -33,19 +33,19 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
 
 
 
-## Installation/环境配置
+## Installation
 
 
 
 
 
-## 🚀Usage/使用方法
+## Usage
 
 
 
 
 
-## 📁Project Structure/项目结构  
+## Project Structure/项目结构  
 ### DQN模型  
 ####  dqn.py
 本文件定义了DQN模型中使用到的网络结构。  
