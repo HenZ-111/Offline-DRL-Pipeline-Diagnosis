@@ -8,7 +8,20 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
 ***
 
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
+---
 
+## 目录
+- [方法](# 🧠Methodology/方法)
+- [功能特点](#功能特点)
+- [安装与运行](#安装与运行)
+- [使用示例](#使用示例)
+- [项目结构](#项目结构)
+- [技术细节](#技术细节)
+- [贡献](#贡献)
+- [许可证](#许可证)
+- [联系方式](#联系方式)
+
+---
 
 ## 🧠Methodology/方法
 
