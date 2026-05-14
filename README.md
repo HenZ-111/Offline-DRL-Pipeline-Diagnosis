@@ -11,15 +11,15 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
 ---
 
 ## 目录
-- [方法](#Methodology)
-- [准备](#Preparation)
-- [环境配置](#Installation)
-- [使用方法](#Usage)
-- [项目结构](#Project-Structure)
-- [注意事项](#Notes)
-- [引用](#Citation)
-- [许可证](#License)
-- [联系方式](#Contact)
+- [方法](#Methodology-)
+- [准备](#Preparation-)
+- [环境配置](#Installation-)
+- [使用方法](#Usage-)
+- [项目结构](#Project-Structure-)
+- [注意事项](#Notes-)
+- [引用](#Citation-)
+- [许可证](#License-)
+- [联系方式](#Contact-)
 
 ---
 
