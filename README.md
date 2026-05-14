@@ -1,4 +1,4 @@
-# Offline Reinforcement Learning for Pipeline Diagnosis
+# SeqDRL-Detection
 This project proposes a **deep reinforcement learning framework** grounded in **sequential decision-making**, leveraging **DQN** and **D3QN** models for training and inference on one-dimensional time-series data.   
 Experiments on a simulated pipeline leak dataset show that the framework achieves strong classification performance in **low-data scenarios** and is readily extendable to other **anomaly detection** applications.  
 
