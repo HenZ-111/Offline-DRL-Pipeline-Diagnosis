@@ -45,7 +45,7 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
 
 
 
-## Project Structure/项目结构  
+## Project Structure  
 ### DQN模型  
 ####  dqn.py
 本文件定义了DQN模型中使用到的网络结构。  
