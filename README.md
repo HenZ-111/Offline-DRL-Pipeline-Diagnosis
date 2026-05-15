@@ -8,6 +8,7 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
 ***
 
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
+![Python](https://img.shields.io/badge/python-3.9-blue)
 ---
 
 ## 目录
