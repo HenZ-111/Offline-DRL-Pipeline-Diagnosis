@@ -47,9 +47,9 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
 ## Project Structure 📁
 ### DQN模型  
 ├─ dqn.py ------------ # Defines the DQN network structure  
-├─ env.py ------------ # RL environment for pipeline data  
+├─ env.py ------------- # RL environment for pipeline data  
 ├─ replay_buffer.py -- # Experience replay buffer  
-├─ DQN_train.py ------ # Training script for DQN  
+├─ DQN_train.py ----- # Training script for DQN  
 ├─ test_dqn.py ------- # Testing script for DQN  
  - ### dqn.py
     本文件定义了DQN模型中使用到的网络结构。  
