@@ -155,19 +155,12 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
          - confusion_matrix_D3QN.png如其名保存的是测试结果混淆矩阵。
 
 ## Notes 👀
-    本人实验使用的管道泄漏声波数据集是分布平均的。  
-    td-error在D3QN的训练过程的相关代码并不是很兼容，需要根据自己的数据集进行相应的修改，主要是跟类别相关。  
-    D3QN优化了state的张量表达，所以在一些地方会和DQN有所不同。本项目里DQN只能接受一维数据的输入，若要调整可以参考D3QN的代码。
-
-
-
+   - 本人实验使用的管道泄漏声波数据集是分布平均的。
+   - td-error在D3QN的训练过程的相关代码并不是很兼容，需要根据自己的数据集进行相应的修改，主要是跟类别相关。
+   - D3QN优化了state的张量表达，所以在一些地方会和DQN有所不同。本项目里DQN只能接受一维数据的输入，若要调整可以参考D3QN的代码。
+   - 本项目暂未拓展结果可视化库，只有混淆矩阵是图的形式，其他的结果要么是模型文件、要么是文字数据。
 
 ## Citation 💞
 
-
-
-
-
 ## Contact 📬
 邮箱: h626242105@hotmail.com
-
