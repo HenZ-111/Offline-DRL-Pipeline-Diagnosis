@@ -79,9 +79,9 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
 
          - WINDOW_SIZE --------- 时间窗口，样本上读取的状态长度
          - ACTION_DIM ----------- 动作空间维度，在此实验中是3，因为只有三个动作，用标量0、1、2表示。
-         - LR ---------------------- 学习率
-         - GAMMA --------------- 折扣因子，用以权衡后续选择的影响
-         - BATCH_SIZE ---------- 单回合抽取经验的数量
+         - LR ----------------------- 学习率
+         - GAMMA ---------------- 折扣因子，用以权衡后续选择的影响
+         - BATCH_SIZE ------------ 单回合抽取经验的数量
          - MEMORY_SIZE --------- 经验池容量、
          - EPISODES ------------ 运行一次本代码，经历的回合数
          - EPSILON_START ------- 初始探索率
