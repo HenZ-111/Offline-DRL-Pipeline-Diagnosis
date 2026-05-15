@@ -52,7 +52,7 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
 ├─ DQN_train.py ------ # Training script for DQN  
 ├─ test_dqn.py ------- # Testing script for DQN  
  - ### dqn.py
-本文件定义了DQN模型中使用到的网络结构。  
+&nbsp;&nbsp;本文件定义了DQN模型中使用到的网络结构。  
  - ### env.py
 强化学习中的环境（Environment）：  
 1. LABEL_MAP定义数据标签和数值编码的映射关系。因此如果要使用自己的数据集需要进行修改。  
