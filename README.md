@@ -107,7 +107,7 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
 ### D3QN模型
 ├─ Dueling_dqn.py ---------------- # Defines the Dueling DQN network structure  
 ├─ env.py -------------------------- # RL environment for pipeline data  
-├─ priortized_replay_buffer.py --- # Priortized experience replay buffer  
+├─ priortized_replay_buffer.py ---- # Priortized experience replay buffer  
 ├─ D3QN_train.py ----------------- # Training script for D3QN  
 ├─ test_d3qn.py ------------------- # Testing script for D3QN  
  - ### d3qn.py
@@ -133,7 +133,7 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
     2. 第一部分超参数与DQN是一样的，第二部分超参数涉及到PER机制，前面也有所提及：
 
          - ALPHA --------------- 优先采样偏置强度
-         - BETA_START ---------- 重要性采样修正的强度
+         - BETA_START --------- 重要性采样修正的强度
          - BETA_INC ------------ 重要性采样修正强度的增长因子，使训练后期偏向于均衡学习
 
     3. 具体的训练流程：
