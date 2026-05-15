@@ -70,13 +70,13 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
  - #### DQN_train.py
 1. evaluate_policy方法使用测试集对每回合训练完的模型进行一个评估，从而绘制评估曲线。
 
-     - 需要输入环境、模型，device用于适配cpu或者gpu，通过修改输入的环境可以更改测试的数据集。
+     - 需要输入环境、模型和device，device用于适配cpu或者gpu，通过修改输入的环境可以更改测试的数据集。
      - 输出是数据集上的平均return，表示平均一个样本（一局游戏）获得的总rewards。
 2. 超参数的设置：
 
-     - WINDOW_SIZE -------- 时间窗口，样本上读取的状态长度
-     - ACTION_DIM --------- 动作空间维度，在此实验中是3，因为只有三个动作，用标量0、1、2表示。
-     - LR ----------------- 学习率
+     - WINDOW_SIZE --------- 时间窗口，样本上读取的状态长度
+     - ACTION_DIM ---------- 动作空间维度，在此实验中是3，因为只有三个动作，用标量0、1、2表示。
+     - LR ------------------ 学习率
      - GAMMA -------------- 折扣因子，用以权衡后续选择的影响
      - BATCH_SIZE --------- 单回合抽取经验的数量
      - MEMORY_SIZE -------- 经验池容量、
@@ -84,7 +84,7 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
      - EPSILON_START ------ 初始探索率
      - EPSILON_END -------- 最低探索率，保证Agent有更加包容、开放的视角
      - EPSILON_DECAY ------ 探索率衰减因子，可以使得训练后期趋于“贪婪”，使训练更加稳定
-     - TARGET_UPDATE_FREQ
+     - TARGET_UPDATE_FREQ -- 
 3. 
  - #### test_dqn.py
 
