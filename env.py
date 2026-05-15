@@ -23,8 +23,11 @@ class PipelineEnv:
                 if file.endswith(".xlsx"):
                     self.files.append((os.path.join(folder, file), label))
 
-    def reset(self):
-        self.current_file, self.label = self.files[np.random.randint(len(self.files))]
+    def reset(self, randset=True, i_file=0):
+        if randset is True:
+            self.current_file, self.label = self.files[np.random.randint(len(self.files))]
+        else:
+            self.current_file, self.label = self.files[i_file]
         signal = pd.read_excel(self.current_file, header=None).values.squeeze()
         self.signal = signal
         self.ptr = 0
