@@ -58,33 +58,22 @@ with torch.no_grad():
         y_pred.append(pred_label)
         file_names.append(os.path.basename(file_path))
 
-acc = accuracy_score(y_true, y_pred)
-cm = confusion_matrix(y_true, y_pred)
-
 label_names = ["noLeak", "smallLeak", "bigLeak"]
-report = classification_report(
-    y_true,
-    y_pred,
-    target_names=label_names,
-    output_dict=True
-)
 
+acc = accuracy_score(y_true, y_pred)
+report = classification_report(y_true, y_pred, target_names=label_names, output_dict=True)
 print("Overall Accuracy:", acc)
 print("\nClassification Report:")
 print(classification_report(y_true, y_pred, target_names=label_names))
 
-df_pred = pd.DataFrame({
-    "file": file_names,
-    "true_label": y_true,
-    "pred_label": y_pred
-})
+df_pred = pd.DataFrame({"file": file_names, "true_label": y_true, "pred_label": y_pred})
 df_pred.to_csv(os.path.join(RESULT_DIR, "dqn_test_predictions.csv"), index=False)
 df_report = pd.DataFrame(report).transpose()
 df_report.to_csv(os.path.join(RESULT_DIR, "dqn_classification_report.csv"))
 print("CSV results saved.")
 
-labels = ["noLeak", "smallLeak", "bigLeak"]
-disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=labels)
+cm = confusion_matrix(y_true, y_pred)
+disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=label_names)
 fig, ax = plt.subplots()
 disp.plot(ax=ax, cmap="Blues", values_format="d")
 ax.set_title('(d)Confusion Matrix - DQN', fontsize=16, y=-0.24, fontweight=500)
