@@ -9,6 +9,10 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
 
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 ![Python](https://img.shields.io/badge/python-3.9-blue)
+![PyTorch](https://img.shields.io/badge/framework-PyTorch-red)
+![Version](https://img.shields.io/badge/version-v1.0-green)
+![CUDA](https://img.shields.io/badge/CUDA-11.7-orange)
+![Stars](https://img.shields.io/github/stars/HanZ-111/SeqDRL-Detection)
 ---
 
 ## 目录
