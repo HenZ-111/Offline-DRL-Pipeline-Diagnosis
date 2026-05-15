@@ -63,8 +63,7 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
      - 类别中的初始化部分，可以自定义时间窗口滑动的步长，如果需要更改则需要在此处调整step_size的数值。  
      - 本环境仅对xlsx文件进行了数据读取的兼容，如果需要使用其他格式，请修改_load_files。  
      - step方法完成对奖励函数的定义，本项目在实验时采用了差异化的奖励函数以权衡预测错误的不同代价。可以自适应调整此部分，以实现自己想要的训练效果。  
- - #### replay_buffer.py
-1. 深度强化学习框架中使用到的经验回放池：  
+ - #### replay_buffer.py  
     - 初始化时可以输入所希望的经验池容量。
     - 从push的输入可以窥见一条经验具体是什么，done定义了“游戏”是否结束，当done为0时，说明游戏未结束。  
     - sample用来采样，可以输入需要的经验数量，即批大小（batch_size），len方法可以输出此时经验池有多少经验。  
