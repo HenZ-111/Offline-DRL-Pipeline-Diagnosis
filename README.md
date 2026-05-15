@@ -52,17 +52,17 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
 ├─ DQN_train.py ------ # Training script for DQN  
 ├─ test_dqn.py ------- # Testing script for DQN  
  - ### dqn.py
-&nbsp;&nbsp;本文件定义了DQN模型中使用到的网络结构。  
+本文件定义了DQN模型中使用到的网络结构。  
  - ### env.py
-&nbsp;&nbsp;强化学习中的环境（Environment）：
+    强化学习中的环境（Environment）：
 
-&nbsp;&nbsp;1. LABEL_MAP定义数据标签和数值编码的映射关系。因此如果要使用自己的数据集需要进行修改。
+    1. LABEL_MAP定义数据标签和数值编码的映射关系。因此如果要使用自己的数据集需要进行修改。
     
-&nbsp;&nbsp;2. 本项目实验时使用的环境PipelineEnv。  
-&nbsp;&nbsp;     - 初始化时可以输入时间窗口以控制状态的长度。在本模型的框架中，状态是时序数据中连续的一段离散点值。  
-              - 类别中的初始化部分，可以自定义时间窗口滑动的步长，如果需要更改则需要在此处调整step_size的数值。  
-              - 本环境仅对xlsx文件进行了数据读取的兼容，如果需要使用其他格式，请修改_load_files。  
-              - step方法完成对奖励函数的定义，本项目在实验时采用了差异化的奖励函数以权衡预测错误的不同代价。可以自适应调整此部分，以实现自己想要的训练效果。  
+    2. 本项目实验时使用的环境PipelineEnv。  
+         - 初始化时可以输入时间窗口以控制状态的长度。在本模型的框架中，状态是时序数据中连续的一段离散点值。  
+         - 类别中的初始化部分，可以自定义时间窗口滑动的步长，如果需要更改则需要在此处调整step_size的数值。  
+         - 本环境仅对xlsx文件进行了数据读取的兼容，如果需要使用其他格式，请修改_load_files。  
+         - step方法完成对奖励函数的定义，本项目在实验时采用了差异化的奖励函数以权衡预测错误的不同代价。可以自适应调整此部分，以实现自己想要的训练效果。  
  - ### replay_buffer.py  
     - 初始化时可以输入所希望的经验池容量，超过容量时自动删除最老的经验。
     - 从push的输入可以窥见一条经验具体是什么，done定义了“游戏”是否结束，当done为0时，说明游戏未结束。  
