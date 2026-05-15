@@ -83,10 +83,10 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
          - GAMMA ---------------- 折扣因子，用以权衡后续选择的影响
          - BATCH_SIZE ------------ 单回合抽取经验的数量
          - MEMORY_SIZE --------- 经验池容量、
-         - EPISODES ------------ 运行一次本代码，经历的回合数
-         - EPSILON_START ------- 初始探索率
-         - EPSILON_END --------- 最低探索率，保证Agent有更加包容、开放的视角
-         - EPSILON_DECAY ------- 探索率衰减因子，可以使得训练后期趋于“贪婪”，使训练更加稳定
+         - EPISODES -------------- 运行一次本代码，经历的回合数
+         - EPSILON_START -------- 初始探索率
+         - EPSILON_END ---------- 最低探索率，保证Agent有更加包容、开放的视角
+         - EPSILON_DECAY -------- 探索率衰减因子，可以使得训练后期趋于“贪婪”，使训练更加稳定
          - TARGET_UPDATE_FREQ -- 更新目标网络的频率，单位是回合数
     3. 具体的训练流程：
 
