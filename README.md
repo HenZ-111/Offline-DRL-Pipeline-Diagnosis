@@ -14,15 +14,13 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
 ![CUDA](https://img.shields.io/badge/CUDA-11.7-orange)
 ![Stars](https://img.shields.io/github/stars/HenZ-111/SeqDRL-Detection)
 ---
-
 ## 目录
 - [方法](#Methodology-)
-- [环境配置](#Installation-)
+- [环境配置](#Installation)
 - [使用方法](#Usage-)
 - [项目结构](#Project-Structure-)
 - [注意事项](#Notes-)
 - [联系方式](#Contact-)
-
 ---
 
 ## Methodology 🧠
@@ -41,7 +39,7 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
 
 具体的实验细节可以读项目结构和代码。
 
-## Installation 
+## Installation
  - 首先需要配置一个虚拟环境（推荐在虚拟环境里部署项目），python版本为3.9。
  - 接下来，需要把本项目的代码zip下载下来，解压到你指定的工作文件夹中。
  - 使用终端Terminal或者命令提示符，进入提取创好的虚拟环境中，如果你使用的是anaconda，则对应的命令是：
