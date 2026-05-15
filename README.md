@@ -47,9 +47,14 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
 
 ## Project Structure 📁
 ### DQN模型  
-####  dqn.py
+├─ dqn.py           # Defines the DQN network structure
+├─ env.py           # RL environment for pipeline data
+├─ replay_buffer.py # Experience replay buffer
+├─ DQN_train.py     # Training script for DQN
+├─ test_dqn.py      # Testing script for DQN
+#### --dqn.py
 本文件定义了DQN模型中使用到的网络结构。  
-#### env.py
+#### ----env.py
 强化学习中的环境（Environment）：  
 1. LABEL_MAP定义数据标签和数值编码的映射关系。因此如果要使用自己的数据集需要进行修改。  
     
@@ -58,12 +63,12 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
     2. 类别中的初始化部分，可以自定义时间窗口滑动的步长，如果需要更改则需要在此处调整step_size的数值。  
     3. 本环境仅对xlsx文件进行了数据读取的兼容，如果需要使用其他格式，请修改_load_files。  
     4. step方法完成对奖励函数的定义，本项目在实验时采用了差异化的奖励函数以权衡预测错误的不同代价。可以自适应调整此部分，以实现自己想要的训练效果。  
-####  replay_buffer.py
+#### ----replay_buffer.py
 深度强化学习框架中使用到的经验回放池：  
 1. 初始化时可以输入所希望的经验池容量。  
 2. 从push的输入可以窥见一条经验具体是什么，done定义了“游戏”是否结束，当done为0时，说明游戏未结束。  
 3. sample用来采样，可以输入需要的经验数量，即批大小（batch_size），len方法可以输出此时经验池有多少经验。  
-####  DQN_train.py
+#### DQN_train.py
 
 
 #### test_dqn.py
