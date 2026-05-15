@@ -1,9 +1,7 @@
-# replay_buffer.py
 import random
 import collections
 import torch
 import numpy as np
-
 
 class ReplayBuffer:
     def __init__(self, capacity):
