@@ -27,6 +27,9 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
 
 ## Methodology 🧠
 
+<img width="1042" height="589" alt="image" src="https://github.com/user-attachments/assets/17d17917-eb72-40a5-8e33-5787829501b0" />
+
+<img width="1074" height="1190" alt="image" src="https://github.com/user-attachments/assets/5dbdbb1f-a441-4431-ace9-bbdf81081406" />
 
 
 
@@ -44,9 +47,13 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
  - 等待虚拟环境安装好依赖库即可使用本项目的模型进行训练、测试。
 
 ## Usage 🎯
+### 数据集适配
 
 
+### 路径更改
 
+
+### 强化学习三要素
 
 
 ## Project Structure 📁
