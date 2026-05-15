@@ -18,7 +18,6 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
 - [项目结构](#Project-Structure-)
 - [注意事项](#Notes-)
 - [引用](#Citation-)
-- [许可证](#License-)
 - [联系方式](#Contact-)
 
 ---
@@ -98,7 +97,7 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
          - dqn_classification_report.csv保存的是预测结果的总体报告。
          - confusion_matrix_DQN.png如其名保存的是测试结果混淆矩阵。
 
-<hr style="height:1px; background-color:#ccc; border:none; width:50%; margin:20px auto;">
+---
 
 ### D3QN模型
 ├─ dqn.py           # Defines the DQN network structure  
@@ -163,8 +162,6 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
 
 
 
-
-## License 📋
 
 
 ## Contact 📬
