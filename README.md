@@ -84,10 +84,10 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
          - BATCH_SIZE ------------ 单回合抽取经验的数量
          - MEMORY_SIZE --------- 经验池容量、
          - EPISODES -------------- 运行一次本代码，经历的回合数
-         - EPSILON_START -------- 初始探索率
-         - EPSILON_END ---------- 最低探索率，保证Agent有更加包容、开放的视角
-         - EPSILON_DECAY -------- 探索率衰减因子，可以使得训练后期趋于“贪婪”，使训练更加稳定
-         - TARGET_UPDATE_FREQ -- 更新目标网络的频率，单位是回合数
+         - EPSILON_START ------- 初始探索率
+         - EPSILON_END --------- 最低探索率，保证Agent有更加包容、开放的视角
+         - EPSILON_DECAY ------ 探索率衰减因子，可以使得训练后期趋于“贪婪”，使训练更加稳定
+         - TARGET_UPDATE_FREQ - 更新目标网络的频率，单位是回合数
     3. 具体的训练流程：
 
          - 初始化部分主要由三部分组成:模型初始化（在env的初始化更改使用的数据集路径）、试加载上次训练结果（model_path和代码底部保存模型相互呼应）、准备训练日志。 
