@@ -13,8 +13,8 @@ def evaluate_policy(env, model, device):
     total_reward = 0
     total_steps = 0
 
-    for file_path, label in env.files:
-        state = env.reset()
+    for i in range(len(env.files)):
+        state = env.reset(randset=False, i_file=i)
         done = False
 
         while not done:
