@@ -30,7 +30,7 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
 <img width="521" height="295" alt="image" src="https://github.com/user-attachments/assets/17d17917-eb72-40a5-8e33-5787829501b0" />
 
  - 下图是本项目实验时使用的DQN的网络模型：
-<img width="521" height="295" alt="image" src="https://github.com/user-attachments/assets/ad09ffc1-698b-46be-ad4b-6a734c4bca05" />
+<img width="450" height="295" alt="image" src="https://github.com/user-attachments/assets/ad09ffc1-698b-46be-ad4b-6a734c4bca05" />
 
  - 下图是本项目实验时使用的D3QN的网络模型，此图借助了AI辅助制图，但在细节上进行了修改：
 <img width="521" height="295" alt="image" src="https://github.com/user-attachments/assets/1683d709-9cc5-4289-be69-3b15ac5b0c01" />
