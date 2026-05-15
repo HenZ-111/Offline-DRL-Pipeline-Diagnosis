@@ -52,9 +52,9 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
 ├─ replay_buffer.py # Experience replay buffer  
 ├─ DQN_train.py     # Training script for DQN  
 ├─ test_dqn.py      # Testing script for DQN  
- - #### dqn.py
+ - ### dqn.py
 本文件定义了DQN模型中使用到的网络结构。  
- - #### env.py
+ - ### env.py
 强化学习中的环境（Environment）：  
 1. LABEL_MAP定义数据标签和数值编码的映射关系。因此如果要使用自己的数据集需要进行修改。  
     
@@ -63,11 +63,11 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
      - 类别中的初始化部分，可以自定义时间窗口滑动的步长，如果需要更改则需要在此处调整step_size的数值。  
      - 本环境仅对xlsx文件进行了数据读取的兼容，如果需要使用其他格式，请修改_load_files。  
      - step方法完成对奖励函数的定义，本项目在实验时采用了差异化的奖励函数以权衡预测错误的不同代价。可以自适应调整此部分，以实现自己想要的训练效果。  
- - #### replay_buffer.py  
+ - ### replay_buffer.py  
     - 初始化时可以输入所希望的经验池容量，超过容量时自动删除最老的经验。
     - 从push的输入可以窥见一条经验具体是什么，done定义了“游戏”是否结束，当done为0时，说明游戏未结束。  
     - sample用来采样，可以输入需要的经验数量，即批大小（batch_size），len方法可以输出此时经验池有多少经验。  
- - #### DQN_train.py
+ - ### DQN_train.py
 1. evaluate_policy方法使用测试集对每回合训练完的模型进行一个评估，从而绘制评估曲线。
 
      - 需要输入环境、模型和device，device用于适配cpu或者gpu，通过修改输入的环境可以更改测试的数据集。
@@ -90,7 +90,7 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
      - 初始化部分主要由三部分组成:模型初始化（在env的初始化更改使用的数据集路径）、试加载上次训练结果（model_path和代码底部保存模型相互呼应）、准备训练日志。 
      - 训练阶段优先与环境交互形成经验放入经验池，经验池达到一回合训练所需经验数量则开始训练。训练一回合以后计算eval reward，并写训练日志。
      - 训练结束后将训练的模型保存至当前文件夹下的dqn_models文件夹内，如果没有则会自动创建。
- - #### test_dqn.py
+ - ### test_dqn.py
      - 初始化时设置了需要的超参数（要与训练时一致）、测试时使用的路径，之后进行模型加载和环境初始化。
      - 具体的测试过程比较简单，懂了怎么训练的，看看代码就懂了是如何测试的。
      - 测试结束后先输出一段文字报告，之后会保存三个结果文件到初始化定义的结果文件夹中。
