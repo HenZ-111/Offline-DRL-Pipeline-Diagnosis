@@ -26,16 +26,17 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
 ---
 
 ## Methodology 🧠
+ - 深度强化学习通用框架如图所示：
+<img width="521" height="295" alt="image" src="https://github.com/user-attachments/assets/17d17917-eb72-40a5-8e33-5787829501b0" />
 
-<img width="1042" height="589" alt="image" src="https://github.com/user-attachments/assets/17d17917-eb72-40a5-8e33-5787829501b0" />
+ - 下图是本项目实验时使用的DQN的网络模型：
+<img width="671" height="520" alt="image" src="https://github.com/user-attachments/assets/ad09ffc1-698b-46be-ad4b-6a734c4bca05" />
 
-<img width="1074" height="1190" alt="image" src="https://github.com/user-attachments/assets/5dbdbb1f-a441-4431-ace9-bbdf81081406" />
+ - 下图是本项目实验时使用的D3QN的网络模型，此图借助了AI辅助制图，但在细节上进行了修改：
+<img width="846" height="513" alt="image" src="https://github.com/user-attachments/assets/1683d709-9cc5-4289-be69-3b15ac5b0c01" />
 
-
-
-
-
-
+ - 本项目的分类诊断流程所下图所示：
+<img width="537" height="595" alt="image" src="https://github.com/user-attachments/assets/5dbdbb1f-a441-4431-ace9-bbdf81081406" />
 
 ## Installation 🛠️
  - 首先需要配置一个虚拟环境（推荐在虚拟环境里部署项目），python版本为3.9。
