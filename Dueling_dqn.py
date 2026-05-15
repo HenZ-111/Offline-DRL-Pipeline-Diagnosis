@@ -1,7 +1,4 @@
-import torch
 import torch.nn as nn
-import torch.nn.functional as F
-
 
 class DuelingDQN(nn.Module):
     def __init__(self, input_dim, output_dim):
@@ -21,11 +18,10 @@ class DuelingDQN(nn.Module):
         self.advantage = nn.Linear(64, output_dim)
 
     def forward(self, x):
-        # x: [B, input_dim]
         x = self.feature(x)
 
-        value = self.value(x)                 # [B, 1]
-        advantage = self.advantage(x)         # [B, A]
+        value = self.value(x)
+        advantage = self.advantage(x)
 
         q = value + advantage - advantage.mean(dim=1, keepdim=True)
         return q
