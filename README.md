@@ -147,12 +147,12 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
  - ### test_d3qn.py
      - 初始化时设置了需要的超参数（要与训练时一致）、测试时使用的路径，之后进行模型加载和环境初始化。
 
-     - 具体的测试过程比较简单，懂了怎么训练的，看看代码就懂了是如何测试的。
+     - 测试报告相比DQN多了置信度confidence_list，除此之外几乎一模一样。
 
      - 测试结束后先输出一段文字报告，之后会保存三个结果文件到初始化定义的结果文件夹中。
-         - dqn_test_predictions.csv保存了数据集每个样本的预测结果，并且附上真实结果进行对比。
-         - dqn_classification_report.csv保存的是预测结果的总体报告。
-         - confusion_matrix_DQN.png如其名保存的是测试结果混淆矩阵。
+         - d3qn_test_predictions.csv保存了数据集每个样本的预测结果，并且附上真实结果进行对比。
+         - d3qn_classification_report.csv保存的是预测结果的总体报告。
+         - confusion_matrix_D3QN.png如其名保存的是测试结果混淆矩阵。
 
 
 ## Notes 👀
