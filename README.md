@@ -32,8 +32,9 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
  - 下图是本项目实验时使用的DQN的网络模型：
 <img width="425" height="295" alt="image" src="https://github.com/user-attachments/assets/ad09ffc1-698b-46be-ad4b-6a734c4bca05" />
 
- - 下图是本项目实验时使用的D3QN的网络模型，此图借助了AI辅助制图，在细节上进行了修正：
-<img width="650" height="450" alt="image" src="https://github.com/user-attachments/assets/1683d709-9cc5-4289-be69-3b15ac5b0c01" />
+ - 下图是本项目实验时使用的D3QN的网络结构，在DQN基础上对最后的价值流进行了解耦：
+<img width="231" height="138" alt="image" src="https://github.com/user-attachments/assets/3f3d4207-d0d7-4459-82da-693d5617a3ce" />
+
 
  - 本项目的分类诊断流程所下图所示：
 <img width="537" height="595" alt="image" src="https://github.com/user-attachments/assets/5dbdbb1f-a441-4431-ace9-bbdf81081406" />
