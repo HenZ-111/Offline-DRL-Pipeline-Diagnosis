@@ -68,10 +68,12 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
     - 从push的输入可以窥见一条经验具体是什么，done定义了“游戏”是否结束，当done为0时，说明游戏未结束。  
     - sample用来采样，可以输入需要的经验数量，即批大小（batch_size），len方法可以输出此时经验池有多少经验。  
  - #### DQN_train.py
-1. evaluate_policy方法使用测试集对每回合训练完的模型进行一个评估，从而绘制评估曲线。  
+1. evaluate_policy方法使用测试集对每回合训练完的模型进行一个评估，从而绘制评估曲线。
+
      - 需要输入环境、模型，device用于适配cpu或者gpu，通过修改输入的环境可以更改测试的数据集。
      - 输出是数据集上的平均return，表示平均一个样本（一局游戏）获得的总rewards。
-2. 超参数的设置：  
+2. 超参数的设置：
+
      - WINDOW_SIZE -------- 时间窗口，样本上读取的状态长度
      - ACTION_DIM --------- 动作空间维度，在此实验中是3，因为只有三个动作，用标量0、1、2表示。
      - LR ----------------- 学习率
