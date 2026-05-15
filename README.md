@@ -100,11 +100,11 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
 ---
 
 ### D3QN模型
-├─ dqn.py           # Defines the DQN network structure  
-├─ env.py           # RL environment for pipeline data  
-├─ replay_buffer.py # Experience replay buffer  
-├─ DQN_train.py     # Training script for DQN  
-├─ test_dqn.py      # Testing script for DQN  
+├─ Dueling_dqn.py               # Defines the Dueling DQN network structure  
+├─ env.py                       # RL environment for pipeline data  
+├─ priortized replay_buffer.py  # Experience replay buffer  
+├─ D3QN_train.py                # Training script for DQN  
+├─ test_d3qn.py                 # Testing script for DQN  
  - ### dqn.py
 本文件定义了DQN模型中使用到的网络结构。  
  - ### env.py
