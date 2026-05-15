@@ -54,8 +54,9 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
  - ### dqn.py
 &nbsp;&nbsp;本文件定义了DQN模型中使用到的网络结构。  
  - ### env.py
-&nbsp;&nbsp;强化学习中的环境（Environment）：  
-&nbsp;&nbsp;1. LABEL_MAP定义数据标签和数值编码的映射关系。因此如果要使用自己的数据集需要进行修改。  
+&nbsp;&nbsp;强化学习中的环境（Environment）：
+
+&nbsp;&nbsp;1. LABEL_MAP定义数据标签和数值编码的映射关系。因此如果要使用自己的数据集需要进行修改。
     
 &nbsp;&nbsp;2. 本项目实验时使用的环境PipelineEnv。  
      - 初始化时可以输入时间窗口以控制状态的长度。在本模型的框架中，状态是时序数据中连续的一段离散点值。  
