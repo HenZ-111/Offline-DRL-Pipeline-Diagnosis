@@ -1,5 +1,3 @@
-# env.py
-# 将单条声波信号视为一个完整运行过程，利用滑动时间窗构造强化学习状态，并根据样本标签设计奖励函数
 import os
 import numpy as np
 import pandas as pd
@@ -10,14 +8,13 @@ LABEL_MAP = {
     "bigLeak": 2
 }
 
-
 class PipelineEnv:
     def __init__(self, data_root, window_size=128):
         self.data_root = data_root
         self.window_size = window_size
         self.files = []
         self._load_files()
-        self.step_size = 4  #步长
+        self.step_size = 4
 
     def _load_files(self):
         for label_name, label in LABEL_MAP.items():
@@ -34,7 +31,6 @@ class PipelineEnv:
         return self.signal[self.ptr:self.ptr + self.window_size]
 
     def step(self, action):
-        # 奖励设计
         if action == self.label:
             reward = 1
         else:
