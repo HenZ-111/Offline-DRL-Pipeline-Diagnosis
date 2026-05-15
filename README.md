@@ -7,7 +7,7 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
 可以证明该框架在**小样本条件**下有较强的分类性能，并可推广应用于其他**异常检测**任务。
 ***
 
-![License]([https://github.com/HenZ-111/SeqDRL-Detection/tree/main?tab=MIT-1-ov-file#readme])
+![License]([https://img.shields.io/badge/license-MIT-lightgrey])
 ---
 
 ## 目录
