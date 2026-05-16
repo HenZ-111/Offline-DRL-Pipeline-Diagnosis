@@ -63,6 +63,9 @@ Experiments on a simulated pipeline leak dataset show that the framework achieve
      - 动作设计：本项目的动作就是分类，因此在数据集适配就已经完成了设计。如果还是需要修改，比如把分类动作变成报警动作，并且停止检测，需要在env.py完成数据集适配，其中step方法需要大改，此时动作会影响此局游戏下一回合的状态。之后修改训练代码和测试代码中的ACTION_DIM。
      - 奖励设计：本项目采用差异化奖励设计，只需要调整env.py的step方法即可修改对应的奖励函数。
 
+### 改变网络结构
+     - 如果你对本项目使用的DQN、D3QN网络结构对最优价值函数的拟合效果不满意，可以改变网络结构的代码更替或优化网络取得自己想要的效果，但是替换时请根据项目结构保持不同代码文件间的对应关系。
+
 ## Project Structure 📁
 ### DQN模型  
 ├─ dqn.py ------------- # Defines the DQN network structure  
